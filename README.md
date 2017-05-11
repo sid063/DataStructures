@@ -1,5 +1,5 @@
 # DataStructures
 
-A repo for Data Structures programmes solved in Java.
+A repo for Data Structures and Threads programmes solved in Java.
 
 
