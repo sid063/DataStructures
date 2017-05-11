@@ -6,11 +6,15 @@ public class quickSort {
 		int a[] = { 1, 8, 3, 9, 4, 5, 7 };
 
 		printArray(a);
-		sort(a, 0, a.length - 1);
+		sort(a);
 		printArray(a);
 	}
 
-	public static void sort(int[] a, int low, int high) {
+	public static void sort(int[] a) {
+		sort(a, 0, a.length - 1);
+	}
+
+	private static void sort(int[] a, int low, int high) {
 		if (low < high) {
 			int pi = partition(a, low, high);
 			sort(a, low, pi - 1);

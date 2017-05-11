@@ -1,5 +1,7 @@
 package sorting;
 
+import arrays.PrintArrays;
+
 public class selectionSort {
 
 	public static void main(String[] args) {
@@ -7,19 +9,15 @@ public class selectionSort {
 		int n = arr.length;
 
 		System.out.println("Before sorting.......");
-		for (int i = 0; i < n; i++) {
-			System.out.print(arr[i] + " ");
-		}
+		PrintArrays.printArray(arr);
 
-		selectionSort(arr, 0);
+		selectionSortIt(arr, 0);
 		System.out.println();
 		System.out.println("After sorting.......");
-		for (int i = 0; i < n; i++) {
-			System.out.print(arr[i] + " ");
-		}
+		PrintArrays.printArray(arr);
 	}
 
-	private static void selectionSort(int[] arr, int i) {
+	private static void selectionSortIt(int[] arr, int i) {
 		int k = i;
 		if (i == arr.length)
 			return;
@@ -38,6 +36,6 @@ public class selectionSort {
 			arr[i] = temp;
 		}
 
-		selectionSort(arr, i + 1);
+		selectionSortIt(arr, i + 1);
 	}
 }

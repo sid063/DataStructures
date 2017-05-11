@@ -6,10 +6,10 @@ public class SortSquareBased {
 	public static void main(String[] args) {
 		int a[] = { -2, -3, 4, -1, 5, -9, 10 };
 		int n = a.length;
-		quickSort.printArray(a);
+		PrintArrays.printArray(a);
 		sort(a, 0, n - 1);
-		System.out.print("After sorting:  ");
-		quickSort.printArray(a);
+		System.out.println("After sorting:  ");
+		PrintArrays.printArray(a);
 
 		int i = -1;
 
@@ -17,17 +17,11 @@ public class SortSquareBased {
 			i++;
 		}
 
+		System.out.println("i: " + i);
 		System.out.println("Now sorting based of squares....");
-		if (i >= 0)
-			squareSortedArray(a, i, n - 1);
-		else
-			squareArray(a);
+		squareSortedArray(a, i, n - 1);
 
-		quickSort.printArray(a);
-	}
-
-	private static void squareArray(int[] a) {
-
+		PrintArrays.printArray(a);
 	}
 
 	private static void squareSortedArray(int[] a, int i, int n) {

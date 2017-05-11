@@ -3,7 +3,6 @@ package string;
 public class allPermutations {
 	public static void main(String[] args) {
 		String s = "abc";
-
 		printAllPerm(s, 0, s.length() - 1);
 	}
 

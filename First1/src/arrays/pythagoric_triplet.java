@@ -45,7 +45,7 @@ public class pythagoric_triplet {
 		int x, y, z;
 		boolean isTriplet = false;
 		quickSort.printArray(a);
-		quickSort.sort(a, 0, a.length - 1);
+		quickSort.sort(a);
 		quickSort.printArray(a);
 
 		for (int j = (a.length - 1); j > 2; j--) {

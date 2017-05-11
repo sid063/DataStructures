@@ -10,7 +10,7 @@ public class CommonElements {
 		findCommonElt(input1, input2, input3);
 	}
 
-	private static void findCommonElt(int[] a, int[] b, int[] c) {
+	public static void findCommonElt(int[] a, int[] b, int[] c) {
 		int i1 = 0, i2 = 0, i3 = 0;
 		int n1 = a.length, n2 = b.length, n3 = c.length;
 		int max = 0;
@@ -34,7 +34,7 @@ public class CommonElements {
 		}
 	}
 
-	private static int getMax(int e1, int e2, int e3) {
+	public static int getMax(int e1, int e2, int e3) {
 		if (e1 > e2) {
 			return (e1 > e3) ? e1 : e3;
 		} else {

@@ -3,23 +3,22 @@ package arrays;
 public class segregate0And1And2 {
 
 	public static void main(String[] args) {
-		int[] a = { 2, 2, 2, 0, 0, 0, 0, 1,1, 1, 1, 1 };
+		int[] a = { 0, 1, 2, 0, 1, 2, 0, 1, 2 };
 		segregate0sAnd1s.printArray(a);
 		segregate(a);
 		segregate0sAnd1s.printArray(a);
 	}
 
 	private static void segregate(int[] a) {
-		int low = 0;
+		int low = 0, mid = 0;
 		int high = a.length - 1;
-		int mid = 0;
 
-		while (mid <= high) {
+		for (int i = 0; i < a.length; i++) {
 			switch (a[mid]) {
 			case 0: {
-				int temp = a[low];
-				a[low] = a[mid];
-				a[mid] = temp;
+				int temp = a[mid];
+				a[mid] = a[low];
+				a[low] = temp;
 				low++;
 				mid++;
 				break;
@@ -29,9 +28,9 @@ public class segregate0And1And2 {
 				break;
 			}
 			case 2: {
-				int temp = a[high];
-				a[high] = a[mid];
-				a[mid] = temp;
+				int temp = a[mid];
+				a[mid] = a[high];
+				a[high] = temp;
 				high--;
 				break;
 			}

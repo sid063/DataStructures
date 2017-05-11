@@ -4,7 +4,8 @@ public class heapsort {
 	public static void main(String[] args) {
 
 		// int arr[] = { 4, 10, 3, 5, 1 };
-		int arr[] = { 1, 6, 2, 7, 3, 4, 5 };
+		// int arr[] = { 1, 6, 2, 7, 3, 4, 5 };
+		int arr[] = { 65, 35, 55, 30, 20, 50, 45 };
 		printArray(arr);
 		sort(arr);
 		System.out.println("After sorting: ");

@@ -4,7 +4,7 @@ class BinarySearchTree {
 	
 	Node root;
 	
-	class Node {
+	private class Node {
 		int key;
 		Node left, right;
 

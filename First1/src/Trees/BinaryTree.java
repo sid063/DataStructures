@@ -1,17 +1,7 @@
 package Trees;
 
-class Node {
-	int data;
-	Node left, right;
-
-	public Node(int item) {
-		data = item;
-		left = right = null;
-	}
-}
-
 public class BinaryTree {
-	Node root;
+	public Node root;
 
 	public BinaryTree() {
 		root = null;
