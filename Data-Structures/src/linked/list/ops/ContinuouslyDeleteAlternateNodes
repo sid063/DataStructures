@@ -8,7 +8,7 @@ package linked.list.ops;
  * 1 9
  * 1
  */
-public class DeleteAlternateNodes {
+public class ContinuouslyDeleteAlternateNodes {
 	public static void main(String[] args) throws InterruptedException {
 		LinkedList ll = new LinkedList();
 		for (int i = 1; i <= 100; i++)
