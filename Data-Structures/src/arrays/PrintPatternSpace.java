@@ -22,7 +22,6 @@ public class PrintPatternSpace {
 		char[] newC = new char[2 * n];
 
 		newC[0] = c[0];
-
 		recursivePrintPattern(c, newC, 1, 1, n);
 	}
 
@@ -32,9 +31,11 @@ public class PrintPatternSpace {
 			return;
 		}
 
+		// Either Print without space.
 		newC[j] = c[i];
 		recursivePrintPattern(c, newC, i + 1, j + 1, n);
 
+		//Or print with space.
 		newC[j] = ' ';
 		newC[j + 1] = c[i];
 		recursivePrintPattern(c, newC, i + 1, j + 2, n);
