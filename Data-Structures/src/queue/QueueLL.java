@@ -1,6 +1,6 @@
 package queue;
 
-//Implement Queue using LL.
+//Queue implementation using Linked List.
 public class QueueLL {
 
 	LinkedList ll;
