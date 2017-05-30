@@ -1,6 +1,6 @@
 package queue;
 
-//Using Arrays
+//Queue implementation using Arrays.
 public class Queue {
 	int[] a;
 	int capacity, size;
